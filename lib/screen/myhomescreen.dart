@@ -116,10 +116,11 @@ class CustomDialog extends StatelessWidget {
     double sw = MediaQuery.sizeOf(context).width;
     final taskProvider = Provider.of<TaskViewModel>(context, listen: false);
     final themeChanger = Provider.of<ThemeChanger>(context);
+
     return Dialog(
       backgroundColor: secondary,
       child: SizedBox(
-        height: sh * 0.6,
+        height: sh * 0.7,
         width: sw * 0.8,
         child: Padding(
           padding:
